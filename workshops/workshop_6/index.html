@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="styles.css">
+
+	<title>Workshop 6 - Client-Side Data Persistence</title>
+</head><body>
+	<h1>Grade Calculator</h1>
+
+	<table border="1">
+		<thead>
+			<th>Assessment</th>
+			<th>Weight</th>
+			<th>Grade</th>
+		</thead>
+		<tbody>
+			<tr><td>ISAD351/T1</td>
+				<td>15</td>
+				<td><input class="gradeInput" id="ISAD351T1" type="text"/></td>
+			</tr>
+			<tr><td>ISAD351/C1</td>
+				<td>45</td>
+				<td><input class="gradeInput" id="ISAD351C1" type="text"/></td>
+			</tr>
+			<tr><td>ISAD351/E1</td>
+				<td>40</td>
+				<td><input class="gradeInput" id="ISAD351E1" type="text"/></td>
+			</tr>
+			<tr><td>SOFT352/T1</td>
+				<td>10</td>
+				<td><input class="gradeInput" id="SOFT352T1" type="text"/></td>
+			</tr>
+			<tr><td>SOFT352/C1</td>
+				<td>90</td>
+				<td><input class="gradeInput" id="SOFT352C1" type="text"/></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2">Overall grade:</td>
+				<td id="overallGrade"></td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<br><button id="calculateBtn">Calculate overall grade</button>
+
+	<script src="node_modules/pouchdb/dist/pouchdb.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./scripts.js"></script>
+</body></html>
